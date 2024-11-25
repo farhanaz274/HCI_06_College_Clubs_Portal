@@ -1,0 +1,76 @@
+html, body {
+    height: 100%; 
+    margin: 0; 
+    overflow: hidden; 
+}
+
+body {
+    position: relative; 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+}
+
+body::before {
+    content: ""; 
+    position: fixed; 
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url("https://www.luc.edu/media/universitymediaassets-vetted/1800x735-heroimages/lakeshorecampus/Campus-Aerial-Lakeshore-Lawn-1800x600.jpg");
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    background-position: center; 
+    filter: blur(10px); 
+    z-index: -1; 
+}
+
+.content {
+    position: relative; 
+    z-index: 1; 
+    text-align: center; 
+    padding: 20px;
+    color: aliceblue;
+    flex: 1; 
+    font-size: 30px;
+}
+
+.login-form {
+    position: relative; 
+    z-index: 1; 
+    padding: 80px; 
+    color: white;
+    background-color: rgba(0, 0, 0, 0.7); 
+    border-radius: 8px;
+    margin-right: 100px; 
+    width: 300px; 
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); 
+}
+
+.login-form label {
+    color: white;
+    display: block; 
+    margin-bottom: 20px; 
+}
+
+.login-form input {
+    margin-bottom: 15px;
+    padding: 20px; 
+    border: none; 
+    border-radius: 4px; 
+    width: 100%; 
+    box-sizing: border-box; 
+}
+
+.login-form button {
+    color: white;
+    background-color: green;
+    padding: 20px 25px; 
+    border: none; 
+    border-radius: 4px; 
+    cursor: pointer; 
+    width: 100%; 
+    font-size: 18px; 
+} 
+

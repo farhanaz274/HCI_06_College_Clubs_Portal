@@ -1,0 +1,69 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+.left, .right {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.left {
+    background: linear-gradient(to bottom right, #f8e1e1, #f8f8f8);
+    color: black;
+}
+
+.right {
+    background: linear-gradient(to bottom right, #2c3e50, #4ca1af);
+    color: white;
+}
+
+.left img, .right img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.center-text {
+    position: absolute;
+    font-size: 3em;
+    font-weight: bold;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.nav {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    gap: 20px;
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+.nav a:hover {
+background-color: white;
+color: green;
+}
+
+.logo {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 1.5em;
+    color: #6a1b9a;
+}
